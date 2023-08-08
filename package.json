@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install:app": "pnpm --prefix app install",
-    "build:app": "pnpm --prefix app build"
+    "install:app": "npm --prefix app install",
+    "build:app": "npm --prefix app build"
   },
   "keywords": [],
   "author": "",
