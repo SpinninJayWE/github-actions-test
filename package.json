@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install:app": "npm --prefix app run install",
+    "install:app": "npm --prefix app install",
     "build:app": "npm --prefix app run build"
   },
   "keywords": [],
