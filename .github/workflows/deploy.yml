@@ -1,0 +1,16 @@
+name: Deploy to Git Pages
+
+on:
+    push:
+        branches:
+            - main
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy to Git Pages
+              uses: JamesIves/github-pages-deploy-action@4.1.4
+              with:
+                  clean: true # 清空部署目录
+                  branch: gh-page # 部署分支
+                  folder: /dist/ # 部署目录
