@@ -1,0 +1,13 @@
+{
+  "name": "github-actions-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:app": "pnpm --prefix app install",
+    "build:app": "pnpm --prefix app build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
