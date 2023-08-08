@@ -4,7 +4,8 @@ on:
     push:
         branches:
             - main
-
+permissions:
+    contents: write
 jobs:
     deploy:
         runs-on: ubuntu-latest
@@ -27,6 +28,6 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
                   CLEAN: true
-                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                   BRANCH: gh-pages
                   FOLDER: ./gh-pages
